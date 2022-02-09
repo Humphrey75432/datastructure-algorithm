@@ -12,7 +12,7 @@ public class BubbleSort {
             boolean flag = true;
             for (int j = 0; j < arr.length - 1; j++) {
                 // 降序排，换成大于号为升序排
-                if (arr[j] < arr[j + 1]) {
+                if (arr[j] > arr[j + 1]) {
                     int tmp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = tmp;
