@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class InsertSort {
 
-    public int[] insertionSort(int[] sourceArr) {
+    public int[] insertSort(int[] sourceArr) {
         // 对源数组进行拷贝，不改变参数内容
         int[] arr = Arrays.copyOf(sourceArr, sourceArr.length);
         // 从下标为1的位置开始选择插入，假定下标为0的位置是有序的

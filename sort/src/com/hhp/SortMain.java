@@ -2,6 +2,8 @@ package com.hhp;
 
 import com.hhp.bubblesort.BubbleSort;
 import com.hhp.insertsort.InsertSort;
+import com.hhp.mergesort.MergeSort;
+import com.hhp.quicksort.QuickSort;
 import com.hhp.selectsort.SelectSort;
 import com.hhp.shellsort.ShellSort;
 
@@ -24,7 +26,7 @@ public class SortMain {
 
         // 插入排序
         InsertSort insertSort = new InsertSort();
-        sorted = insertSort.insertionSort(input);
+        sorted = insertSort.insertSort(input);
         System.out.println("插入排序的结果为：" + Arrays.toString(sorted));
 
         // 希尔排序
@@ -32,5 +34,15 @@ public class SortMain {
         ShellSort shellSort = new ShellSort();
         shellSort.shellSort(copyInput);
         System.out.println("希尔排序的结果为：" + Arrays.toString(copyInput));
+
+        // 快速排序
+        QuickSort quickSort = new QuickSort();
+        int[] quickSortResult = quickSort.quickSort(input);
+        System.out.println("快速排序的结果为：" + Arrays.toString(quickSortResult));
+
+        // 归并排序
+        MergeSort mergeSort = new MergeSort();
+        int[] mergeSortResult = mergeSort.mergeSort(input);
+        System.out.println("归并排序的结果为：" + Arrays.toString(mergeSortResult));
     }
 }

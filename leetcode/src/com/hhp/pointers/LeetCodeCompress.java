@@ -57,6 +57,7 @@ public class LeetCodeCompress {
                 'c', 'c', 'c'
         };
         LeetCodeCompress codeCompress = new LeetCodeCompress();
-        System.out.println(codeCompress.compress(chars));
+        System.out.println("compress: " + codeCompress.compress(chars));
+        System.out.println("anotherCompress: " + codeCompress.anotherCompress(chars));
     }
 }
