@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class SortMain {
 
     public static void main(String[] args) {
-        int[] input = {3, 2, 1, 6, 5, 4};
+        int[] input = {22, 34, 3, 32, 82, 55, 89, 50, 37, 5, 64, 35, 9, 70};
 
         // 冒泡排序
         BubbleSort bubbleSort = new BubbleSort();
